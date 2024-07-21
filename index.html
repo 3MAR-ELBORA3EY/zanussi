@@ -7,6 +7,17 @@
       name="description"
       content="نقدم خدمات صيانة وإصلاح شاملة لأجهزة Zanussi المنزلية. فريق متخصص، قطع غيار أصلية، خدمة سريعة وفعالة بأسعار تنافسية. اتصل بنا الآن لحجز موعد!"
     />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="//cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="//api.whatsapp.com" />
+    <!-- ################################################# -->
+    <!-- ################################################# -->
+    <!-- Preload stylesheets and other important resources -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/main.js" as="script" />
+    <!-- ##################################################### -->
+    <!-- ##################################################### -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -16,14 +27,14 @@
   <body>
     <header class="flex">
       <div class="logo">صيانة زانوسى</div>
-      <nav class="mobile">
-        <ul class="navbar mobile">
-          <li><i class="fa-solid fa-xmark"></i></li>
-          <li><a href="#hero">الرئيسية</a></li>
-          <li><a href="#whoWe">من نحن</a></li>
-          <li><a href="#services">الخدمات</a></li>
-          <li><a href="#feature">الميزات</a></li>
-          <li><a href="#contact">الاتصال</a></li>
+      <nav class="mobile" aria-label="التنقل الرئيسي">
+        <ul class="navbar mobile" role="menu">
+          <li role="menuitem"><i class="fa-solid fa-xmark"></i></li>
+          <li role="menuitem"><a href="#hero">الرئيسية</a></li>
+          <li role="menuitem"><a href="#whoWe">من نحن</a></li>
+          <li role="menuitem"><a href="#services">الخدمات</a></li>
+          <li role="menuitem"><a href="#feature">الميزات</a></li>
+          <li role="menuitem"><a href="#contact">الاتصال</a></li>
         </ul>
         <ul class="icon mobile-icon">
           <li>
@@ -196,7 +207,7 @@
           <div class="card">
             <img src="imgs/صيانه دوريه.webp" alt="صيانة دوريه زانوسي" />
             <p class="name">خدمات إضافية</p>
-            <div class="descrption">
+            <ul class="descrption">
               <li>
                 <span>الصيانة الدورية:</span> خدمات صيانة دورية لضمان عمل أجهزتك
                 بكفاءة عالية على مدار العام.
@@ -209,7 +220,7 @@
                 <span>دعم فني مستمر:</span>نحن هنا للإجابة عن أي استفسارات تقنية
                 قد تواجهها وتقديم الدعم اللازم في أي وقت.
               </li>
-            </div>
+            </ul>
             <a href="tel:+201148602380">اطلب الخدمه</a>
           </div>
         </div>
