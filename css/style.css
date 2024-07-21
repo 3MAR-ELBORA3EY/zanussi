@@ -568,6 +568,7 @@ footer .container p a {
   margin-right: 8px;
   color: var(--sc);
   text-decoration: underline;
+  display: inline-block;
 }
 
 footer .container p a:hover {
