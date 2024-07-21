@@ -567,6 +567,7 @@ footer .container p a {
   text-transform: uppercase;
   margin-right: 8px;
   color: var(--sc);
+  display: inline-block;
 }
 
 footer .container p a:hover {
