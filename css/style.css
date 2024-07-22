@@ -5,6 +5,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  user-select: none;
 }
 
 :root {
@@ -24,7 +25,7 @@ body {
 }
 
 section {
-  padding: 75px 0;
+  padding: 50px 0;
 }
 
 .container {
@@ -32,6 +33,7 @@ section {
   margin: 0 auto;
   display: grid;
   gap: 2rem;
+  justify-items: center;
 }
 
 .flex {
@@ -46,8 +48,8 @@ h2.title {
 
 p.title {
   line-height: 1.3rem;
-  font-size: 0.9rem;
   text-align: center;
+  max-width: 500px;
 }
 
 ::-webkit-scrollbar {
@@ -187,7 +189,7 @@ header .menu {
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
   header .menu {
     display: none;
   }
@@ -416,6 +418,87 @@ header .menu {
 }
 
 /* ################################
+######## start FAQS section #######
+################################### */
+
+.faqs .container .content {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  justify-items: center;
+}
+
+.faqs .container .content .question {
+  display: grid;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  transition: var(--transition-time);
+  overflow: hidden;
+  height: fit-content;
+}
+
+.faqs .container .content .question:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.466);
+}
+
+.faqs .container .content .question p.ask {
+  border-bottom: 1px solid var(--sc);
+  padding: 1rem;
+  height: fit-content;
+  user-select: none;
+  cursor: pointer;
+}
+
+.faqs .container .content .question p.answer {
+  overflow: hidden;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .faqs .container .content {
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  }
+}
+
+/* ################################
+######## start client review section #######
+################################### */
+
+.clientReviews .container .reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.clientReviews .container .reviews .card {
+  flex-basis: 240px;
+}
+
+.clientReviews .container .reviews .card .info {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.clientReviews .container .reviews .card .info .stars {
+  display: flex;
+  gap: 1px;
+  color: var(--sc);
+}
+
+.clientReviews .container .reviews .card .review {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ################################
 ######## start contact section #######
 ################################### */
 
@@ -424,6 +507,7 @@ header .menu {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
+  width: 100%;
 }
 
 .contact .container .content .info {
@@ -495,9 +579,10 @@ header .menu {
 }
 
 .contact .container .content form textarea {
-  width: 100%;
   resize: none;
   min-height: 180px;
+  padding: 1.3rem 1rem;
+  scrollbar-width: none;
 }
 
 .contact .container .content form button {
