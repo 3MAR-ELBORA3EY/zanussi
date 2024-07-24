@@ -71,7 +71,7 @@
 
 :root {
   --primary-color: #121212;
-  --sc: rgb(23, 19, 104);
+  --sc: rgb(223, 182, 71);
   --white-color: #fff;
   --transition-time: 0.3s;
 }
@@ -109,7 +109,7 @@ h2.title {
 }
 
 p.title {
-  line-height: 1.5;
+  line-height: 1.3rem;
   text-align: center;
   max-width: 500px;
 }
@@ -275,15 +275,14 @@ header .menu {
 
 .hero {
   background-image: linear-gradient(
-      rgba(23, 19, 104, 0.507) 30%,
+      rgba(223, 183, 71, 0.692) 30%,
       rgba(0, 0, 0, 0.911)
     ),
-    url(../imgs/bg.webp);
+    url(../../imgs/bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 5rem 0;
-  min-height: 65vh;
 }
 
 .hero .container {
@@ -298,7 +297,6 @@ header .menu {
 .hero .container h1 {
   margin: 0;
   text-transform: uppercase;
-  line-height: 1.3;
 }
 
 .hero .container p {
@@ -318,6 +316,7 @@ header .menu {
 
 .hero .container a:hover {
   background-color: var(--sc);
+  color: var(--primary-color);
 }
 
 .hero .container a:active {
@@ -363,7 +362,7 @@ header .menu {
 }
 
 /* ################################
-######## start services section #######
+######## start who we section #######
 ################################### */
 
 .services .container .cards {
@@ -433,6 +432,7 @@ header .menu {
 
 .services .container .cards .card a:hover {
   background-color: var(--sc);
+  color: var(--primary-color);
 }
 
 .services .container .cards .card a:active {
@@ -554,7 +554,7 @@ header .menu {
 
 .clientReviews .container .reviews .card .review {
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.2rem;
   padding: 0.5rem 1rem;
 }
 
@@ -658,7 +658,7 @@ header .menu {
 }
 
 .contact .container .content form button:hover {
-  background-color: var(--sc);
+  color: var(--sc);
 }
 
 .contact .container .content form button:active {
